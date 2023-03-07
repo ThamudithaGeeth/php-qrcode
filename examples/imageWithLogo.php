@@ -75,6 +75,9 @@ class QRImageWithLogo extends QRGdImage{
 /*
  * Runtime
  */
+//get the data to encode into qr code from GET Parameters
+ $data = $_GET['data'] ?? '';
+ $logo = $_GET['logo'] ?? '';
 
 $options = new QROptions([
 	'version'             => 5,
